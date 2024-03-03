@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/cats/plant-index.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1>Plant List</h1>
+  <img src="{% static 'images/cactus.png' %}" alt="A cool cactus" />
+  <img src="{% static 'images/fern.jpeg' %}" alt="A happy fern" />
+</section>
+
+<section class="card-container">
+  {% for plant in plants %}
+    <div class="card">
+      <div class="card-content">
+        <div class="card-img-container">
+          <img 
+            src="{% static 'images/sprout.png' %}"
+            alt=""
+          >
+        </div>
+        <h2 class="card-title">{{ plant.name }}</h2>
+        <p>A great {{ plant.species }}!</p>
+        <p><small>{{ plant.description }}</small></p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
