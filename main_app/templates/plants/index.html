@@ -5,7 +5,7 @@
 <link 
   rel="stylesheet"
   type="text/css"
-  href="{% static 'css/cats/plant-index.css' %}"
+  href="{% static 'css/plants/plant-index.css' %}"
 />
 {% endblock %}
 
@@ -20,17 +20,19 @@
 <section class="card-container">
   {% for plant in plants %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img 
-            src="{% static 'images/sprout.png' %}"
-            alt=""
-          >
+      <a href="/plants/{{ plant.id }}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              src="{% static 'images/sprout.png' %}" 
+              alt="A sprouted plant"
+            >
+          </div>
+          <h2 class="card-title">{{ plant.name }}</h2>
+            <p>A cool {{ plant.species }}!</p>
+          <p><small>{{ plant.description }}</small></p>
         </div>
-        <h2 class="card-title">{{ plant.name }}</h2>
-        <p>A great {{ plant.species }}!</p>
-        <p><small>{{ plant.description }}</small></p>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </section>
