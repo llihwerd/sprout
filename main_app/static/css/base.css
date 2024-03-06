@@ -191,6 +191,9 @@ nav li {
 
   .header-logo-container {
     width: 213px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .page-header h1 {
