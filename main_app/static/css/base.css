@@ -95,7 +95,6 @@ nav li {
 
 .header-logo-container {
   margin: auto;
-  padding: 10px 20px 0;
   max-width: 500px;
 }
 
@@ -175,15 +174,9 @@ nav li {
     min-height: calc(100vh - 53px);
   }
 
-  nav,
-  .header-logo-container {
+  nav {
     margin: 10px 0;
     padding: 0 15px;
-  }
-
-  /* visual fix to help align logo */
-  .header-logo-container {
-    padding-top: 3px;
   }
 
   nav {
@@ -250,7 +243,6 @@ nav li {
 
   .header-logo-container {
     /* visual fix to help align logo */
-    padding-top: 6px;
     width: 256px;
     height: 35px;
   }
