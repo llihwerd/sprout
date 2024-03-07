@@ -15,6 +15,12 @@ main > section {
   flex-direction: column;
 }
 
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-logo-container {
   display: none;
 }
@@ -63,7 +69,7 @@ main > section {
   margin-top: 16px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   main {
     justify-content: space-around;
   }
@@ -78,9 +84,5 @@ main > section {
     border-radius: var(--card-border-radius);
     box-shadow: var(--card-box-shadow);
     width: 100%;
-  }
-
-  .logo-container {
-    max-width: 520px;
   }
 }

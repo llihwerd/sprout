@@ -12,6 +12,10 @@
   box-shadow: var(--card-box-shadow);
 }
 
+.card:hover {
+  background-color: rgb(127, 255, 178);
+}
+
 .card-content {
   padding: 10px;
   width: 100%;
