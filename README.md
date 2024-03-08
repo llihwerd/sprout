@@ -6,7 +6,7 @@ An easy-to-use app to track all of your plants and their daily needs.
 ![Home Screen](https://github.com/llihwerd/sprout/blob/main/main_app/static/images/home_screen.png?raw=true)
 
 
-![Plant Detail Page](https://github.com/llihwerd/sprout/blob/main/main_app/static/images/plant_details.png?raw=true))
+![Plant Detail Page](https://github.com/llihwerd/sprout/blob/main/main_app/static/images/plant_details.png?raw=true)
 
 
 ## Getting Started
