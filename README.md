@@ -11,7 +11,7 @@ An easy-to-use app to track all of your plants and their daily needs.
 
 ## Getting Started
 
-### >>> [Track your plants - Click Here!](https://presence-social.fly.dev/)
+### >>> [Track your plants - Click Here!](https://sproutdrewhill.fly.dev/)
 
 ## Attributions
 
