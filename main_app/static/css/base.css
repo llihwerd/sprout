@@ -68,8 +68,28 @@ main {
   padding: 0 10px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 100px;
+  padding: 10px;
+}
+
+hr {
+  border-color: green;
+  display: flex;
+  justify-content: left;
+  justify-self: left;
+}
+
 h2 {
   font-size: var(--font-xl);
+}
+
+h4 {
+  font-weight: 500;
 }
 
 nav a {

@@ -11,6 +11,17 @@
   max-width: 350px;
 }
 
+.style-box {
+  width: 50%;
+}
+
+hr {
+  border-color: green;
+  display: flex;
+  justify-content: left;
+  justify-self: left;
+}
+
 .usr-img {
   width: 100%;
   border-radius: var(--card-border-radius);

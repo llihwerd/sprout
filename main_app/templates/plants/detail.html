@@ -12,19 +12,18 @@
 {% block content %}
 
 <section class="plant-container">
-  <div class="plant-img">
-    <img 
-      src="{% static 'images/sprout.png' %}" 
-      alt="A sprouted plant"
-    >
-  </div>
-  <div class="plant-details">
-    <h1>{{ plant.name }}</h1>
-      <h2>A cool {{ plant.species }}</h2>
-    <p>{{ plant.description }}</p>
-    <div class="plant-actions">
-      <a href="{% url 'plant-update' plant.id %}" class="btn warn">Edit</a>
-      <a href="{% url 'plant-delete' plant.id %}" class="btn danger">Delete</a>
+  <div class="style-box">
+    <div class="plant-details">
+      <h1>{{ plant.name }}</h1>
+      <hr>
+      <h2>{{ plant.species }}</h2>
+      <p>{{ plant.description }}</p>
+      <h3>Watering:</h3> <p> {{ plant.waterNeeded }}</p>
+      <h3>Sunlight:</h3> <p> Needs {{ plant.sunHoursNeeded }} hours of sunlight daily.</p>
+      <div class="plant-actions">
+        <a href="{% url 'plant-update' plant.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'plant-delete' plant.id %}" class="btn danger">Delete</a>
+      </div>
     </div>
   </div>
 </section>
